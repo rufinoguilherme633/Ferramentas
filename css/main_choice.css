@@ -1,0 +1,65 @@
+
+
+
+
+
+.container-main-choice {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    padding-top: 60px; /* altura do header */
+    box-sizing: border-box;
+    min-height: 100vh; /* ocupa a tela toda */
+}
+
+.main-choice__title{
+
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.btn-reset {
+    all: unset; 
+    cursor: pointer;
+    display: inline-block; 
+    border-radius: 50px; 
+    text-align: center;
+    color: white;
+}
+
+
+.btn{
+    width: 200px;
+    height: 60px;
+    font-size: 18px;  
+    font-weight: 900; 
+    transition: transform 0.2s, box-shadow 0.2s, backgroud-color 0.2s;
+}
+
+
+
+.btn-retirar{
+   background-color: #A8003D;
+}
+.btn-devolver{
+    background-color: #50CB6E;  
+}
+
+
+.btn-retirar:hover {
+    background-color: #87002e; /* tom mais escuro */
+    transform: translateY(-3px); /* levanta o botão */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.btn-devolver:hover {
+    background-color: #3fa75c; /* tom mais escuro */
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+

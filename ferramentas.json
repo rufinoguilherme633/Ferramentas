@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "nome": "Martelo",
+    "descricao": "Martelo de aço para pregos e pequenos ajustes.",
+    "foto": "assets/img/ferramentas/martelo.png",
+    "qrcode": "assets/qrcode/MART-0001.png",
+    "quantidade": 10
+  },
+  {
+    "id": 2,
+    "nome": "Chave de Fenda",
+    "descricao": "Chave de fenda comum, usada para parafusos.",
+    "foto": "assets/img/ferramentas/chave_fenda.png",
+    "qrcode": "assets/qrcode/CHFD-0002.png",
+    "quantidade": 15
+  },
+  {
+    "id": 3,
+    "nome": "Chave Phillips",
+    "descricao": "Chave Phillips para parafusos cruzados.",
+    "foto": "assets/img/ferramentas/chave_phillips.png",
+    "qrcode": "assets/qrcode/CHPH-0003.png",
+    "quantidade": 15
+  },
+  {
+    "id": 4,
+    "nome": "Alicate",
+    "descricao": "Alicate de corte e aperto, tamanho médio.",
+    "foto": "assets/img/ferramentas/alicate.png",
+    "qrcode": "assets/qrcode/ALIC-0004.png",
+    "quantidade": 8
+  },
+  {
+    "id": 5,
+    "nome": "Serra Manual",
+    "descricao": "Serra para madeira ou plástico.",
+    "foto": "assets/img/ferramentas/serra_manual.png",
+    "qrcode": "assets/qrcode/SERA-0005.png",
+    "quantidade": 5
+  },
+  {
+    "id": 6,
+    "nome": "Trena",
+    "descricao": "Fita métrica de 5 metros.",
+    "foto": "assets/img/ferramentas/trena.png",
+    "qrcode": "assets/qrcode/TREN-0006.png",
+    "quantidade": 7
+  },
+  {
+    "id": 7,
+    "nome": "Chave Inglesa",
+    "descricao": "Chave ajustável para porcas e parafusos grandes.",
+    "foto": "assets/img/ferramentas/chave_inglesa.png",
+    "qrcode": "assets/qrcode/CHIN-0007.png",
+    "quantidade": 6
+  },
+  {
+    "id": 8,
+    "nome": "Lima",
+    "descricao": "Lima de metal para acabamento.",
+    "foto": "assets/img/ferramentas/lima.png",
+    "qrcode": "assets/qrcode/LIMA-0008.png",
+    "quantidade": 10
+  },
+  {
+    "id": 9,
+    "nome": "Nível de Bolha",
+    "descricao": "Nível para verificação de superfícies horizontais e verticais.",
+    "foto": "assets/img/ferramentas/nivel.png",
+    "qrcode": "assets/qrcode/NIVL-0009.png",
+    "quantidade": 4
+  },
+  {
+    "id": 10,
+    "nome": "Formão",
+    "descricao": "Ferramenta para entalhes e ajustes em madeira.",
+    "foto": "assets/img/ferramentas/formao.png",
+    "qrcode": "assets/qrcode/FORM-0010.png",
+    "quantidade": 5
+  }
+]
