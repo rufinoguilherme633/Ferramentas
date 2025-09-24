@@ -35,9 +35,11 @@ function renderizarLista(lista){
                 window.location.href = `./detalhe.html?id=${id}`
             })
             card.addEventListener("mouseenter", () => {
-                console.log("meu mouse passou aqui no " + card.getAttribute('data-id'));
+               setTimeout(() =>{
+                 console.log("meu mouse passou aqui no " + card.getAttribute('data-id'));
                 const ferramenta_mouse = todasFerramentas.filter(fr => fr.id == card.getAttribute('data-id'));
                 console.log(ferramenta_mouse);
+               },2000)
              });
 });
 
@@ -72,3 +74,24 @@ search_bar.addEventListener("input", () => {
     renderizarLista(resultado)
     
 })
+
+
+
+
+function overlay(ferramenta){
+
+    return `
+            <div class="container-ferramenta" id="container-ferramenta">
+        <div class="container-dados">
+            <span id="ferramenta-nome">${ferramenta.nome}</span>
+            <img src="${ferramenta.foto}" alt="" id="ferramenta-foto">
+            <span id="ferramenta-quantidade">${ferramenta.quantidade}</span>
+        </div>
+        <div class="container-qrcode">
+            <img src="${ferramenta.qrcode}" alt="" id="ferramenta-qrcode">
+        </div>
+    </div>
+    `
+    
+
+}
