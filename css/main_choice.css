@@ -12,9 +12,9 @@
     align-items: center;
     gap: 1.5rem;
     padding: 1rem;
-    padding-top: 60px; /* altura do header */
+   
     box-sizing: border-box;
-    min-height: 100vh; /* ocupa a tela toda */
+   
 }
 
 .main-choice__title{

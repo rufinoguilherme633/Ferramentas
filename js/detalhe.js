@@ -1,29 +1,24 @@
+
 // lê o id da URL
 const params = new URLSearchParams(window.location.search);
 const id = parseInt(params.get("id"));
 
-function trazerDetalhes(ferramenta){
-    return `
-        <div>
-            <span>${ferramenta.nome}</span>
-            <img src="../${ferramenta.foto}" alt="">
-            <span>quantidade ${ferramenta.quantidade}</span>
-        </div>
-        <div>
-            <img src="../${ferramenta.qrcode}" alt="">
-        </div>
-    `;
-}
-
 fetch("../ferramentas.json")
     .then(response => response.json())
-    .then(ferramentas => {
-        const ferramenta = ferramentas.find(f => f.id === id);
-        const containerFerramenta = document.getElementById("container-ferramenta");
+    .then(data => {
+        const ferramenta = data.find(item => item.id == id)
+        console.log(ferramenta)
         if(ferramenta){
-            containerFerramenta.innerHTML = trazerDetalhes(ferramenta);
-        } else {
-            containerFerramenta.innerHTML = "<span>Nada encontrado</span>";
+            document.getElementById("ferramenta-nome").textContent = ferramenta.nome;
+            document.getElementById("ferramenta-quantidade").textContent = "Quantidade disponiveis:" + ferramenta.quantidade;
+            document.getElementById("ferramenta-qrcode").src = "../" + ferramenta.qrcode;
+            const imgFoto = document.getElementById("ferramenta-foto");
+            
+            imgFoto.onerror = function() {
+                this.onerror = null;
+                this.src = "../assets/sem_foto.svg";
+            };
+            imgFoto.src ="../"+ ferramenta.foto
         }
-    })
-    .catch(error => console.log("erro " + error));
+    }).catch(error => console.log("Erro ao carregar dados: " + error))
+
