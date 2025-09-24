@@ -39,6 +39,9 @@
     font-size: 18px;  
     font-weight: 900; 
     transition: transform 0.2s, box-shadow 0.2s, backgroud-color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 

@@ -16,10 +16,21 @@
     
     gap: 30px;
     justify-content: center;
+    padding-top: 100px;
        
 }
 
+.container-caixa-pesquisa{
+    display: flex;
 
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100px;
+    background-color: white;
+}
 
 .search-bar {
     width: 50%;
@@ -32,6 +43,9 @@
     transition: all 0.3s ease;
 }
 
+.title-ferramentas{
+    font-size: 2rem;
+}
 
 
 .img_ferramenta{
@@ -53,6 +67,7 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* sombra mais suave e moderna */
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
 }
 
 /* Efeito ao passar o mouse */
